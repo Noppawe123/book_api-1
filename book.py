@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})  # อนุญาตให้ React เรียก API ได้
 
 # 🔹 เชื่อมต่อ MongoDB Atlas
-MONGO_URI = "mongodb+srv://no:<password>.ofacj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGO_URI = "mongodb+srv://name:<password>@cluster0.ofacj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 client = MongoClient(MONGO_URI)
 
 # 🔹 ใช้ฐานข้อมูล `book`
